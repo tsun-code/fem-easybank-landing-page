@@ -21,7 +21,7 @@
     }
 
     .overlay {
-        display: none;
+        visibility: hidden;
         position: fixed;
         top: 3.75rem;
         bottom: 0px;
