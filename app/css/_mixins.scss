@@ -1,0 +1,17 @@
+$pc-min-media: 64em;
+$pad-max-media: 63.9375em;
+$pad-min-media: 48em;
+$phone-max-media: 47.99em;
+ 
+
+ @mixin desktop-version() {
+    @media all and (min-width: $pad-min-media) {
+            @content;
+      }
+}
+
+@mixin mobile-version() {
+    @media all and (max-width: $phone-max-media) {
+            @content;
+      }
+}
