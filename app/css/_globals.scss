@@ -15,10 +15,19 @@ body {
     font-weight: 300;
     color: $grayishblue;
     font-family: 'Public Sans', sans-serif;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
 }
 
 a, a:visited, a:hover {
     text-decoration: none;
+}
+
+.container {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
 }
 
 .flex {
@@ -65,4 +74,8 @@ a, a:visited, a:hover {
      @include desktop-version {
          display: none;
      }
+}
+
+.has-fade {
+    visibility: hidden;
 }
