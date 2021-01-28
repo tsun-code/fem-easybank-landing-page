@@ -100,16 +100,16 @@ a, a:visited, a:hover {
   padding-bottom: 1.0625rem;
 }
 
-.header.open .header.menu_toggle > span:first-child {
+.header.open .header__toggle > span:first-child {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-.header.open .header.menu_toggle > span:nth-child(2) {
+.header.open .header__toggle > span:nth-child(2) {
   opacity: 0;
 }
 
-.header.open .header.menu_toggle > span:last-child {
+.header.open .header__toggle > span:last-child {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
@@ -125,12 +125,12 @@ a, a:visited, a:hover {
   background: linear-gradient(#2d314d, transparent);
 }
 
-.header.logo img {
+.header__logo img {
   width: 8.8125rem;
   height: 1.375rem;
 }
 
-.header.menu {
+.header__menu {
   background: white;
   border-radius: 5px;
   padding: 1.6rem;
@@ -142,14 +142,14 @@ a, a:visited, a:hover {
   margin-top: 1.5rem;
 }
 
-.header.menu a {
+.header__menu a {
   display: block;
   color: #2d314d;
   padding: 0.625rem;
   text-align: center;
 }
 
-.header.menu_toggle > span {
+.header__toggle > span {
   display: block;
   width: 26px;
   height: 2px;
@@ -160,11 +160,11 @@ a, a:visited, a:hover {
           transform-origin: 3px 1px;
 }
 
-.header.menu_toggle > span:not(:last-child) {
+.header__toggle > span:not(:last-child) {
   margin-bottom: 5px;
 }
 
-.header.links a {
+.header__links a {
   position: relative;
   font-size: 0.875rem;
   color: #9698a6;
@@ -172,19 +172,19 @@ a, a:visited, a:hover {
   transition: color 300ms ease-in-out;
 }
 
-.header.links a:not(:last-child) {
+.header__links a:not(:last-child) {
   margin-right: 32px;
 }
 
-.header.links a:hover {
+.header__links a:hover {
   color: #2d314d;
 }
 
-.header.links a:hover::before {
+.header__links a:hover::before {
   opacity: 1;
 }
 
-.header.links a::before {
+.header__links a::before {
   content: "";
   display: block;
   position: absolute;
