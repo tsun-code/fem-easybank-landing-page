@@ -2,7 +2,7 @@
     background-color: $verylightgray;
 
     .container {
-        @include desktop-version {
+        @include up-to-pc {
             display: flex;
             align-items: center;
         } 
@@ -16,7 +16,12 @@
         background-position: center center;
         min-height: 17.5rem;
 
-        @include desktop-version {
+        @include up-to-pad {
+            min-height: 25rem;
+            background-position: center 70%;
+          }
+
+        @include up-to-pc {
             flex: 3;
             order: 2;
             height: 41rem;
@@ -24,7 +29,7 @@
         }
 
         &::before {
-            @include desktop-version {
+            @include up-to-pc {
                 content: "";
                 position: absolute;
                 height: 100%;
@@ -46,8 +51,12 @@
             background-size: 93%;
             background-repeat: no-repeat;
             background-position: center bottom;
+
+            @include up-to-pad {
+                background-size: 52%;
+            }
       
-            @include desktop-version {
+            @include up-to-pc {
               width: 120%;
               height: 122%;
               background-size: 94%;
@@ -69,7 +78,7 @@
             margin-top: 0;
             margin-bottom: 1.5rem;
 
-            @include desktop-version {
+            @include up-to-pc {
                 font-size: 3.25rem;
             }
         }
@@ -79,7 +88,7 @@
             margin-bottom: 2.25rem;
         }
 
-        @include desktop-version {
+        @include up-to-pc {
             flex: 2;
             order: 1;
             text-align: left;

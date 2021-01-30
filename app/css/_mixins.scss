@@ -1,17 +1,22 @@
 $pc-min-media: 64em;
 $pad-max-media: 63.9375em;
-$pad-min-media: 48em;
-$phone-max-media: 47.99em;
- 
+$pad-min-media: 40em;
+$phone-max-media: 39.9375em;
 
- @mixin desktop-version() {
-    @media all and (min-width: $pad-min-media) {
-            @content;
-      }
+@mixin up-to-pc() {
+  @media all and (min-width: $pc-min-media) {
+    @content;
+  }
 }
 
-@mixin mobile-version() {
-    @media all and (max-width: $phone-max-media) {
-            @content;
-      }
+@mixin up-to-pad() {
+  @media all and (min-width: $pad-min-media) {
+    @content;
+  }
+}
+
+@mixin down-to-mobile() {
+  @media all and (max-width: $phone-max-media) {
+    @content;
+  }
 }

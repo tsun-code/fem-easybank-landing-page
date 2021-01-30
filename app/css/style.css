@@ -26,7 +26,7 @@ body.no-scroll {
   overflow: hidden;
 }
 
-@media all and (min-width: 48em) {
+@media all and (min-width: 64em) {
   body {
     font-size: 1.125rem;
   }
@@ -118,13 +118,13 @@ button:hover, .button:hover {
   opacity: 0.7;
 }
 
-@media all and (max-width: 47.99em) {
+@media all and (max-width: 39.9375em) {
   .hide-for-mobile {
     display: none;
   }
 }
 
-@media all and (min-width: 48em) {
+@media all and (min-width: 40em) {
   .hide-for-desktop {
     display: none;
   }
@@ -319,7 +319,7 @@ button:hover, .button:hover {
   background-color: #fafafa;
 }
 
-@media all and (min-width: 48em) {
+@media all and (min-width: 64em) {
   .hero .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -339,7 +339,14 @@ button:hover, .button:hover {
   min-height: 17.5rem;
 }
 
-@media all and (min-width: 48em) {
+@media all and (min-width: 40em) {
+  .hero__image {
+    min-height: 25rem;
+    background-position: center 70%;
+  }
+}
+
+@media all and (min-width: 64em) {
   .hero__image {
     -webkit-box-flex: 3;
         -ms-flex: 3;
@@ -352,7 +359,7 @@ button:hover, .button:hover {
   }
 }
 
-@media all and (min-width: 48em) {
+@media all and (min-width: 64em) {
   .hero__image::before {
     content: "";
     position: absolute;
@@ -377,7 +384,13 @@ button:hover, .button:hover {
   background-position: center bottom;
 }
 
-@media all and (min-width: 48em) {
+@media all and (min-width: 40em) {
+  .hero__image::after {
+    background-size: 52%;
+  }
+}
+
+@media all and (min-width: 64em) {
   .hero__image::after {
     width: 120%;
     height: 122%;
@@ -400,7 +413,7 @@ button:hover, .button:hover {
   margin-bottom: 1.5rem;
 }
 
-@media all and (min-width: 48em) {
+@media all and (min-width: 64em) {
   .hero__text h1 {
     font-size: 3.25rem;
   }
@@ -411,7 +424,7 @@ button:hover, .button:hover {
   margin-bottom: 2.25rem;
 }
 
-@media all and (min-width: 48em) {
+@media all and (min-width: 64em) {
   .hero__text {
     -webkit-box-flex: 2;
         -ms-flex: 2;
@@ -421,5 +434,86 @@ button:hover, .button:hover {
             order: 1;
     text-align: left;
   }
+}
+
+.feature {
+  background-color: #f3f4f6;
+  text-align: center;
+}
+
+@media all and (min-width: 40em) {
+  .feature {
+    text-align: left;
+  }
+}
+
+.feature__intro {
+  margin-bottom: 3.75rem;
+}
+
+@media all and (min-width: 64em) {
+  .feature__intro {
+    width: 60%;
+  }
+}
+
+@media all and (min-width: 40em) {
+  .feature__grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.feature__item {
+  padding: 0.9375rem;
+}
+
+@media all and (min-width: 40em) {
+  .feature__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+  }
+}
+
+@media all and (min-width: 64em) {
+  .feature__item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+.feature__icon {
+  margin-bottom: 1.875rem;
+}
+
+@media all and (min-width: 64em) {
+  .feature__icon {
+    margin-bottom: 2.75rem;
+  }
+}
+
+.feature__title {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.15;
+  color: #2d314d;
+  margin-bottom: 1rem;
+}
+
+@media all and (min-width: 64em) {
+  .feature__title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.feature__description {
+  font-size: 0.875rem;
+  line-height: 1.5;
 }
 /*# sourceMappingURL=style.css.map */

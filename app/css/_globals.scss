@@ -24,7 +24,7 @@ body {
         overflow: hidden;
     }
 
-    @include desktop-version {
+    @include up-to-pc {
         font-size: $font-size-normal;
     }
 }
@@ -100,13 +100,13 @@ button, .button {
 
 // Visibility
 .hide-for-mobile {
-     @include mobile-version {
+     @include down-to-mobile {
          display: none;
      }
 }
  
 .hide-for-desktop {
-     @include desktop-version {
+     @include up-to-pad {
          display: none;
      }
 }
