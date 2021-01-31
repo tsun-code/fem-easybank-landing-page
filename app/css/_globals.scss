@@ -72,10 +72,20 @@ a, a:visited, a:hover {
     padding-bottom: 1.5rem;
     padding-right: 1.5rem;
     padding-left: 1.5rem;
+
+    @include up-to-pc {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
   }
   &--py {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+
+    @include up-to-pc {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
   }
   &--px {
     padding-right: 1.5rem;
@@ -83,12 +93,20 @@ a, a:visited, a:hover {
   }
   &--pt {
     padding-top: 1.5rem;
+
+    @include up-to-pc {
+        padding-top: 6rem;
+    }
   }
   &--pr {
     padding-right: 1.5rem;
   }
   &--pb {
     padding-bottom: 1.5rem;
+
+    @include up-to-pc {
+        padding-bottom: 6rem;
+    }
   }
   &--pl {
     padding-left: 1.5rem;

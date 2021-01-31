@@ -83,9 +83,23 @@ a, a:visited, a:hover {
   padding-left: 1.5rem;
 }
 
+@media all and (min-width: 64em) {
+  .container--pall {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
 .container--py {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+@media all and (min-width: 64em) {
+  .container--py {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
 }
 
 .container--px {
@@ -97,12 +111,24 @@ a, a:visited, a:hover {
   padding-top: 1.5rem;
 }
 
+@media all and (min-width: 64em) {
+  .container--pt {
+    padding-top: 6rem;
+  }
+}
+
 .container--pr {
   padding-right: 1.5rem;
 }
 
 .container--pb {
   padding-bottom: 1.5rem;
+}
+
+@media all and (min-width: 64em) {
+  .container--pb {
+    padding-bottom: 6rem;
+  }
 }
 
 .container--pl {
@@ -530,5 +556,75 @@ button:hover, .button:hover {
 .feature__description {
   font-size: 0.875rem;
   line-height: 1.5;
+}
+
+.article {
+  background-color: #fafafa;
+}
+
+.article__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 1.875rem;
+}
+
+@media all and (min-width: 40em) {
+  .article__grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media all and (min-width: 64em) {
+  .article__grid {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.article__item {
+  border-radius: 0.3125rem;
+  overflow: hidden;
+  background-color: white;
+}
+
+.article__image {
+  height: 12.5rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.article__text {
+  padding: 1.875rem 1.875rem 2.5rem 1.875rem;
+  color: #9698a6;
+}
+
+@media all and (min-width: 40em) {
+  .article__text {
+    padding: 1.875rem 1.5625rem;
+  }
+}
+
+.article__author {
+  font-size: 0.625rem;
+  margin-bottom: 0.75rem;
+}
+
+.article__title {
+  font-size: 1.0625rem;
+  line-height: 1.2;
+  color: #2d314d;
+  margin-bottom: 0.5rem;
+}
+
+.article__title:hover {
+  color: rgba(26, 197, 146, 0.671);
+}
+
+.article__description {
+  font-size: 0.8125rem;
 }
 /*# sourceMappingURL=style.css.map */
