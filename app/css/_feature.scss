@@ -9,14 +9,14 @@
     &__intro {
       margin-bottom: 3.75rem;
   
-      @include up-to-pc{
+      @include up-to-pc {
         width: 60%;
       }
     }
   
     &__grid {
   
-      @include up-to-pad{
+      @include up-to-pad {
         display: flex;
         flex-wrap: wrap;     
       }

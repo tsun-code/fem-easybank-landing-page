@@ -1,116 +1,145 @@
 html {
-    font-size: 100%;
-    box-sizing: border-box;
+  font-size: 100%;
+  box-sizing: border-box;
 }
 
 *, *::before, *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    line-height: 1.3;
-    font-size: $font-size-small;
-    font-weight: 300;
-    color: $grayishblue;
-    font-family: 'Public Sans', sans-serif;
-    line-height: 1.3;
-    min-height: 350vh;
-    overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+  font-size: $font-size-small;
+  font-weight: 300;
+  color: $grayishblue;
+  font-family: "Public Sans", sans-serif;
+  line-height: 1.3;
+  min-height: 350vh;
+  overflow-x: hidden;
 
+  &.no-scroll {
+    overflow: hidden;
+  }
 
-    &.no-scroll {
-        overflow: hidden;
-    }
+  @include up-to-pc {
+    font-size: $font-size-normal;
+  }
+}
 
-    @include up-to-pc {
-        font-size: $font-size-normal;
-    }
+h1, h2, h3 {
+  font-weight: 300;
+  line-height: 1.15;
+  color: $darkblue;
+  margin-top: 0px;
+}
+
+h1 {
+  font-size: 2.31rem;
+  margin-bottom: 1.5rem;
+
+  @include up-to-pc {
+    font-size: 3.25rem;
+  }
+}
+
+h2 {
+  font-size: 1.875rem;
+  margin-bottom: 1.5625rem;
+
+  @include up-to-pc {
+    font-size: 2.25rem;
+    margin-bottom: 2.25rem;
+  }
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 2.25rem;
 }
 
 a, a:visited, a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .container {
-    max-width: 69.375rem;
-    margin: 0 auto;
+  max-width: 69.375rem;
+  margin: 0 auto;
 
-    &--pall {
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
-        padding-right: 1.5rem;
-        padding-left: 1.5rem;
-    }
-    &--py {
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
-    }
-    &--px {
-        padding-right: 1.5rem;
-        padding-left: 1.5rem;
-    }
-    &--pt {
-        padding-top: 1.5rem;
-    }
-    &--pr {
-        padding-right: 1.5rem;
-    }
-    &--pb {
-        padding-bottom: 1.5rem;
-    }
-    &--pl {
-        padding-left: 1.5rem;
-    }
-
+  &--pall {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+  &--py {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  &--px {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+  &--pt {
+    padding-top: 1.5rem;
+  }
+  &--pr {
+    padding-right: 1.5rem;
+  }
+  &--pb {
+    padding-bottom: 1.5rem;
+  }
+  &--pl {
+    padding-left: 1.5rem;
+  }
 }
 
 .flex {
-    display: flex;
-    &.jc-sb {
-        justify-content: space-between;
-    }
-    &.jc-c {
-        justify-content: center;
-    }
-    &.ai-c {
-        align-items: center;
-    }
+  display: flex;
+  &.jc-sb {
+    justify-content: space-between;
+  }
+  &.jc-c {
+    justify-content: center;
+  }
+  &.ai-c {
+    align-items: center;
+  }
 }
 
 button, .button {
-    position: relative;
-    display: inline-block;
-    padding: 0.875rem 2.1875rem;
-    background: linear-gradient(to left, $brightcyan, $limegreen);
-    border: 0;
-    border-radius: 50px;
-    cursor: pointer;
-    font-weight: 400;
-    font-size: $font-size-small;
-    color: white;
-    transition: opacity 300ms ease-in-out;
+  position: relative;
+  display: inline-block;
+  padding: 0.875rem 2.1875rem;
+  background: linear-gradient(to left, $brightcyan, $limegreen);
+  border: 0;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: $font-size-small;
+  color: white;
+  transition: opacity 300ms ease-in-out;
 
-    &:hover {
-        opacity: 0.7;
-    }
+  &:hover {
+    opacity: 0.7;
+  }
 
 }
 
 // Visibility
 .hide-for-mobile {
-     @include down-to-mobile {
-         display: none;
-     }
+  @include down-to-mobile {
+    display: none;
+  }
 }
- 
+
 .hide-for-desktop {
-     @include up-to-pad {
-         display: none;
-     }
+  @include up-to-pad {
+    display: none;
+  }
 }
 
 .has-fade {
-    visibility: hidden;
+  visibility: hidden;
 }

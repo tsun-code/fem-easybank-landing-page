@@ -70,24 +70,6 @@
     &__text {
         text-align: center;
 
-        h1 {
-            font-weight: 300;
-            font-size: 2.25rem;
-            color: $darkblue;
-            line-height: 1.15;
-            margin-top: 0;
-            margin-bottom: 1.5rem;
-
-            @include up-to-pc {
-                font-size: 3.25rem;
-            }
-        }
-
-        p {
-            line-height: 1.5;
-            margin-bottom: 2.25rem;
-        }
-
         @include up-to-pc {
             flex: 2;
             order: 1;
