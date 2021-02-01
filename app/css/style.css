@@ -671,12 +671,7 @@ button:hover::before, .button:hover::before {
 
 .footer__logo {
   display: inline-block;
-}
-
-@media all and (max-width: 39.9375em) {
-  .footer__logo {
-    margin-bottom: 1.875rem;
-  }
+  margin-bottom: 1.875rem;
 }
 
 @media all and (min-width: 64em) {
@@ -685,14 +680,13 @@ button:hover::before, .button:hover::before {
   }
 }
 
-@media all and (max-width: 39.9375em) {
-  .footer__social {
-    margin-bottom: 1.875rem;
-  }
+.footer__social {
+  margin-bottom: 1.875rem;
 }
 
 @media all and (min-width: 64em) {
   .footer__social {
+    margin-bottom: 0;
     grid-area: social;
     -ms-flex-item-align: end;
         -ms-grid-row-align: end;
