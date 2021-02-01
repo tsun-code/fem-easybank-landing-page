@@ -57,6 +57,7 @@
       line-height: 1.2;
       color: $darkblue;
       margin-bottom: 0.5rem;
+      transition: color 150ms ease-in-out;
 
       &:hover {
           color: $linkgreen;
