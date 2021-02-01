@@ -743,15 +743,14 @@ button:hover::before, .button:hover::before {
   }
 }
 
-@media all and (max-width: 39.9375em) {
-  .footer__links.col2 {
-    margin-bottom: 1.875rem;
-  }
+.footer__links.col2 {
+  margin-bottom: 1.875rem;
 }
 
 @media all and (min-width: 64em) {
   .footer__links.col2 {
     grid-area: links2;
+    margin-bottom: 0;
   }
 }
 
@@ -774,9 +773,13 @@ button:hover::before, .button:hover::before {
   }
 }
 
-@media all and (max-width: 39.9375em) {
+.footer__cta a.button {
+  margin-bottom: 1.875rem;
+}
+
+@media all and (min-width: 64em) {
   .footer__cta a.button {
-    margin-bottom: 1.875rem;
+    margin-bottom: 0;
   }
 }
 

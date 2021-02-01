@@ -75,12 +75,11 @@
     }
 
     &.col2 {
-      @include down-to-mobile {
-        margin-bottom: 1.875rem;
-      }
+      margin-bottom: 1.875rem;
 
       @include up-to-pc {
         grid-area: links2;
+        margin-bottom: 0;
       }
     }
 
@@ -95,6 +94,7 @@
   }
 
   &__cta {
+    
     @include up-to-pc {
       grid-area: cta;
       text-align: right;
@@ -102,8 +102,10 @@
     }
 
     a.button {
-      @include down-to-mobile {
-        margin-bottom: 1.875rem;
+      margin-bottom: 1.875rem;
+
+      @include up-to-pc {
+        margin-bottom: 0;
       }
     }
   }
